@@ -23,7 +23,8 @@ type HTTP struct {
 }
 
 //if any of these change, the binary has been updated
-var defaultHTTPCheckHeaders = []string{"ETag", "If-Modified-Since", "Last-Modified", "Content-Length"}
+//var defaultHTTPCheckHeaders = []string{"ETag", "If-Modified-Since", "Last-Modified", "Content-Length"}
+var defaultHTTPCheckHeaders = []string{"Content-Length"}
 
 // Init validates the provided config
 func (h *HTTP) Init() error {
